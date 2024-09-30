@@ -21,6 +21,27 @@ python3 jwk_gen.py
 
 [Documentatie van de VO rond het genereren van een JWK](https://authenticatie.vlaanderen.be/docs/beveiligen-van-toepassingen/integratie-methoden/oidc/technische-info/client-authenticatie/#voorbeeld-van-een-publieke-sleutel-jwk-zoals-te-bezorgen-aan-het-integratieteam)
 
+## Aanvragen van een Client ID
+
+Om een Client ID aan te vragen, log je in op het [Beheerportaal](https://beheerportaal.vlaanderen.be/), waar je via de organisatie waar je deel van uitmaakt (zoals je eigen vennootschap). 
+
+Navigeer naar de aanvraag pagina: `Start --> Toegangsbeheer --> API- en Clientbeheer --> Mijn OAuth Clients --> Nieuwe OAuth Client aanmaken`, vull alle gegevens in en kies de API die je wilt gebruiken.
+ 
+
+![Keuze uit verschillende AWV APIs](img/beheerportaal-NaamAPI.png)
+
+Kies ofwel voor de `AWV Toepassingen API` voor algemene toegang tot de AWV applicaties. Deze toegang moet goedgekeurd worden voor je een Client ID toegewezen krijgt. 
+
+![AWV Toepassingen API](img/beheerportaal-ClientID.png)
+
+Je kan ook kiezen voor de API op de PUB omgeving, `AWV PUB API` waar de opendata van AWV terug te vinden is. Deze API kan je zonder expliete goedkeuring aanvragen.
+
+Afhankelijk van de API die je gebruikt, zal je in het script een andere scope moeten aanduiden: 
+
+- AWV Toepassingen API vereist de scope `awv_toep_services`
+- AWV PUB API vereist het gebruik van de scope `vo_info`
+
+
 
 ## Voer een request uit met een Access Token
 
