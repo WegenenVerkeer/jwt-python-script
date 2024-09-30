@@ -25,7 +25,7 @@ python3 jwk_gen.py
 
 Om een Client ID aan te vragen, log je in op het [Beheerportaal](https://beheerportaal.vlaanderen.be/), waar je via de organisatie waar je deel van uitmaakt (zoals je eigen vennootschap). 
 
-Navigeer naar de aanvraag pagina: `Start --> Toegangsbeheer --> API- en Clientbeheer --> Mijn OAuth Clients --> Nieuwe OAuth Client aanmaken`, vull alle gegevens in en kies de API die je wilt gebruiken.
+Navigeer naar de aanvraag pagina: `Start --> Toegangsbeheer --> API- en Clientbeheer --> Mijn OAuth Clients --> Nieuwe OAuth Client aanmaken`, vull alle gegevens in en kies de API die je wil gebruiken.
  
 
 ![Keuze uit verschillende AWV APIs](img/beheerportaal-NaamAPI.png)
