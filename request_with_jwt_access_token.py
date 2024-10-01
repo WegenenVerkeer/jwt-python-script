@@ -81,10 +81,22 @@ access_token_json = get_access_token(client_id, signed_jwt, auth_token_url)
 print()
 print(f"Access token: {access_token_json['access_token']}, geldig voor {access_token_json['expires_in'] // 60} minuten")
 
+# API Gateway URLs:
 # OPGELET: de PROD URL is helemaal anders dan de DEV en TEI URLs (wegenenverkeer.be versus mow.vlaanderen.be)!
-# url = "https://api.wegenenverkeer.vlaanderen.be/weglocaties/weg/N0080001/lijnlocaties"
+url = "https://api.wegenenverkeer.vlaanderen.be/weglocaties/weg/N0080001/lijnlocaties"
 # url = "https://api.apps-tei.mow.vlaanderen.be/weglocaties/weg/N0080001/lijnlocaties"
-url = "https://api.apps-dev.mow.vlaanderen.be/weglocaties/weg/N0080001/lijnlocaties"
+# url = "https://api.apps-dev.mow.vlaanderen.be/weglocaties/weg/N0080001/lijnlocaties"
+
+# Deze URLs werken voor de standaard endpoints (die oauth ontsloten zijn): 
+# url = "https://services.apps.mow.vlaanderen.be/locatieservices2/rest/weg/N0080001/lijnlocaties"
+# url = "https://services.apps-tei.mow.vlaanderen.be/locatieservices2/rest/weg/N0080001/lijnlocaties"
+# url = "https://services.apps-dev.mow.vlaanderen.be/locatieservices2/rest/weg/N0080001/lijnlocaties"
+
+# Volgende URLs werken niet via OAuth:
+# url = "https://apps-dev.mow.vlaanderen.be/locatieservices2/rest/weg/N0080001/lijnlocaties"
+# url = "https://apps-tei.mow.vlaanderen.be/locatieservices2/rest/weg/N0080001/lijnlocaties"
+# url = "https://apps.mow.vlaanderen.be/locatieservices2/rest/weg/N0080001/lijnlocaties"
+
 
 headers = {
         'Authorization': f'Bearer {access_token_json['access_token']}',
