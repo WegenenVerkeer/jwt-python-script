@@ -30,11 +30,10 @@ Navigeer naar de aanvraag pagina: `Start --> Toegangsbeheer --> API- en Clientbe
 
 ![Keuze uit verschillende AWV APIs](img/beheerportaal-NaamAPI.png)
 
-Kies ofwel voor de `AWV Toepassingen API` voor algemene toegang tot de AWV applicaties. Deze toegang moet goedgekeurd worden voor je een Client ID toegewezen krijgt. 
+Kies voor de `AWV Toepassingen API` voor algemene toegang tot de AWV applicaties. Deze toegang moet goedgekeurd worden voor je een Client ID toegewezen krijgt. Je kan ook kiezen voor de API op de PUB omgeving, `AWV PUB API` waar de opendata van AWV terug te vinden is. Deze API kan je zonder expliete goedkeuring aanvragen.
 
 ![AWV Toepassingen API](img/beheerportaal-ClientID.png)
 
-Je kan ook kiezen voor de API op de PUB omgeving, `AWV PUB API` waar de opendata van AWV terug te vinden is. Deze API kan je zonder expliete goedkeuring aanvragen.
 
 Als je de algemene toegang `AWV Toepassingen API` wenst te gebruiken, moet je Client ID ook bij het autorisatiesysteem van AWV geregistreerd worden. Gebruik de Client ID als VoId bij het aanmaken van de systeemgebruiker en `AWV-Toepassingen` als Entitlement.
 
