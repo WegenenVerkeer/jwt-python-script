@@ -36,6 +36,10 @@ Kies ofwel voor de `AWV Toepassingen API` voor algemene toegang tot de AWV appli
 
 Je kan ook kiezen voor de API op de PUB omgeving, `AWV PUB API` waar de opendata van AWV terug te vinden is. Deze API kan je zonder expliete goedkeuring aanvragen.
 
+Als je de algemene toegang `AWV Toepassingen API` wenst te gebruiken, moet je Client ID ook bij het autorisatiesysteem van AWV geregistreerd worden. Gebruik de Client ID als VoId bij het aanmaken van de systeemgebruiker en `AWV-Toepassingen` als Entitlement.
+
+![Systeemgebruiker in P&O](img/PenO-systeemgebruiker.png)
+
 Afhankelijk van de API die je gebruikt, zal je in het script een andere scope moeten aanduiden: 
 
 - AWV Toepassingen API vereist de scope `awv_toep_services`
