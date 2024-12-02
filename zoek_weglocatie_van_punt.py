@@ -109,7 +109,7 @@ def gereference_batch(punten, zoekafstend=20):
         'Accept': 'application/json'
     }
     data = [to_geojson(x, y) for x, y in punten]
-    response = requests.post(url, json=data, headers=headers, params={"zoekafstand": zoekafstend})
+    response = requests.post(url, json=data, headers=headers, params={"zoekafstand": zoekafstend, "wegType": "Genummerd"})
     if response.status_code != 200:
         print("Error:")
         print(response.text)
@@ -153,7 +153,7 @@ def georeference(x, y, zoekafstand=20, enkel_genummerde_wegen=True):
 
 
 if __name__ == "__main__":
-    print(f"Success case: punt licht in de buurt van een genummerde weg")
+    print(f"Success case: punt ligt in de buurt van een genummerde weg")
     georeference(153180, 207072)
     print()
     print()
