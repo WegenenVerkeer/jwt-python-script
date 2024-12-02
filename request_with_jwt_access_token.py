@@ -83,7 +83,7 @@ print(f"Access token: {access_token_json['access_token']}, geldig voor {access_t
 
 # API Gateway URLs:
 # OPGELET: de PROD URL is helemaal anders dan de DEV en TEI URLs (wegenenverkeer.be versus mow.vlaanderen.be)!
-url = "https://api.wegenenverkeer.vlaanderen.be/weglocaties/weg/N0080001/lijnlocaties"
+# url = "https://api.wegenenverkeer.vlaanderen.be/weglocaties/weg/N0080001/lijnlocaties"
 # url = "https://api.apps-tei.mow.vlaanderen.be/weglocaties/weg/N0080001/lijnlocaties"
 # url = "https://api.apps-dev.mow.vlaanderen.be/weglocaties/weg/N0080001/lijnlocaties"
 
@@ -91,6 +91,7 @@ url = "https://api.wegenenverkeer.vlaanderen.be/weglocaties/weg/N0080001/lijnloc
 # url = "https://services.apps.mow.vlaanderen.be/locatieservices2/rest/weg/N0080001/lijnlocaties"
 # url = "https://services.apps-tei.mow.vlaanderen.be/locatieservices2/rest/weg/N0080001/lijnlocaties"
 # url = "https://services.apps-dev.mow.vlaanderen.be/locatieservices2/rest/weg/N0080001/lijnlocaties"
+url = "https://services.apps.mow.vlaanderen.be/geoserver/cert/wms?request=getCapabilities"
 
 # Volgende URLs werken niet via OAuth:
 # url = "https://apps-dev.mow.vlaanderen.be/locatieservices2/rest/weg/N0080001/lijnlocaties"

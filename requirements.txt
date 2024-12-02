@@ -3,7 +3,7 @@ requests
 python-dotenv
 requests-oauth2client
 PyJWT==2.9.0
-cryptography
+cryptography>=42.0.0
 
 # jwcrypto is enkel voor het script om de jwk te genereren (is alternatief voor PyJWT) 
 jwcrypto
